@@ -1,10 +1,14 @@
 import "./styles/App.css";
 import { NavLink } from "react-router";
 
+const screenWidth = window.screen.width;
+
 const toggleHidden = () => {
   const menuItems = document.getElementById("nav-toggle");
 
-  if (menuItems?.classList.contains("hidden")) {
+  if (screenWidth >= 768) {
+    menuItems?.classList.remove("hidden");
+  } else if (menuItems?.classList.contains("hidden")) {
     menuItems.classList.remove("hidden");
   } else {
     menuItems?.classList.add("hidden");
@@ -35,9 +39,12 @@ function Nav() {
             </svg>
           </button>
         </div>
-        <div id="nav-toggle" className="md:inline bg-[rgba(98,144,195,0.62)]">
+        <div
+          id="nav-toggle"
+          className="hidden md:inline bg-[rgba(98,144,195,0.62)]"
+        >
           <ul className="flex items-start justify-center flex-col text-2xl font-(family-name:--font-primary) md:font-(family-name:--font-secondary) md:text-lg md:flex-row md:items-center md:h-full">
-            <li className="mt-5 ms-3 pb-3 md:p-0 md:mx-3">
+            <li className="mt-5 ms-3 pb-3 md:p-0 md:mx-3 md:mt-0">
               <NavLink to="/home">
                 <span className="text-[#44457e] md:text-black">H</span>ome
               </NavLink>
