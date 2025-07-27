@@ -14,9 +14,9 @@ const toggleHidden = () => {
 function Nav() {
   return (
     <div className="fixed w-full">
-      <div className="fixed w-[46px] h-[43px] sm:h-[65px] sm:shadow-md sm:ml-3 bg-[#ffffff]">
+      <div className="fixed w-[46px] h-[43px] md:h-[65px] sm:shadow-md sm:ml-3 bg-[#ffffff]">
         <NavLink to="/">
-          <h1 className="text-center text-4xl sm:text-5xl font-(family-name:--font-primary)">
+          <h1 className="text-center text-4xl md:text-5xl font-(family-name:--font-primary)">
             <span className="text-[#44457e]">L</span>F
           </h1>
         </NavLink>
@@ -36,24 +36,21 @@ function Nav() {
           </button>
         </div>
         <div id="nav-toggle" className="md:inline bg-[rgba(98,144,195,0.62)]">
-          <ul
-            className="flex items-center justify-center flex-col font-(family-name:--font-primary) md:font-(family-name:--font-secondary) text-2xl md:text-lg md:flex-row md:h-full"
-            style={{ border: "2px solid red" }}
-          >
-            <li className="mx-3 pb-3">
+          <ul className="flex items-start justify-center flex-col text-2xl font-(family-name:--font-primary) md:font-(family-name:--font-secondary) md:text-lg md:flex-row md:items-center md:h-full">
+            <li className="mt-5 ms-3 pb-3 md:p-0 md:mx-3">
               <NavLink to="/home">
                 <span className="text-[#44457e] md:text-black">H</span>ome
               </NavLink>
             </li>
-            <li className="mx-3 pb-3">
+            <li className="mx-3 pb-3 md:p-0">
               <NavLink to="/order">
                 <span className="text-[#44457e] md:text-black">O</span>rder
               </NavLink>
             </li>
-            <li className="mx-3 pb-3">
+            <li className="mx-3 pb-3 md:p-0">
               <span className="text-[#44457e] md:text-black">I</span>nvoices
             </li>
-            <li className="mx-3 pb-3">
+            <li className="mx-3 pb-3 md:p-0">
               <span className="text-[#44457e] md:text-black">A</span>ccount
             </li>
           </ul>
