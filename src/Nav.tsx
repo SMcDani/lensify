@@ -6,13 +6,19 @@ const toggleHidden = () => {
 
   if (menuItems?.classList.contains("hidden")) {
     menuItems.classList.remove("hidden");
+    menuItems?.classList.remove("animate-[var(--animate-slide-out)]");
 
     requestAnimationFrame(() => {
       menuItems.classList.add("animate-[var(--animate-slide-in)]");
     });
   } else {
     menuItems?.classList.remove("animate-[var(--animate-slide-in)]");
-    menuItems?.classList.add("hidden");
+    requestAnimationFrame(() => {
+      menuItems?.classList.add("animate-[var(--animate-slide-out)]");
+    });
+    setTimeout(() => {
+      menuItems?.classList.add("hidden");
+    }, 190); //made the timeout slightly less than animation to avoid menu flashing after animation finishes
   }
 };
 

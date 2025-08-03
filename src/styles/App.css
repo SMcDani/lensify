@@ -26,6 +26,16 @@
       transform: translateX(0);
     }
   }
+
+  --animate-slide-out: nav-slide-out 0.2s ease-out;
+  @keyframes nav-slide-out {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
 }
 
 
