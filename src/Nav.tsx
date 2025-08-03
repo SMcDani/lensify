@@ -1,16 +1,17 @@
 import "./styles/App.css";
 import { NavLink } from "react-router";
 
-const screenWidth = window.screen.width;
-
 const toggleHidden = () => {
   const menuItems = document.getElementById("nav-toggle");
 
-  if (screenWidth >= 768) {
-    menuItems?.classList.remove("hidden");
-  } else if (menuItems?.classList.contains("hidden")) {
+  if (menuItems?.classList.contains("hidden")) {
     menuItems.classList.remove("hidden");
+
+    requestAnimationFrame(() => {
+      menuItems.classList.add("animate-[var(--animate-slide-in)]");
+    });
   } else {
+    menuItems?.classList.remove("animate-[var(--animate-slide-in)]");
     menuItems?.classList.add("hidden");
   }
 };
