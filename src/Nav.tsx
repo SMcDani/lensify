@@ -1,4 +1,3 @@
-import "./styles/App.css";
 import { NavLink } from "react-router";
 
 const toggleHidden = () => {
