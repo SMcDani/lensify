@@ -47,7 +47,7 @@ function Nav() {
         </div>
         <div
           id="nav-toggle"
-          className="hidden md:inline bg-[rgba(98,144,195,0.62)]"
+          className="hidden md:inline bg-[rgba(98,144,195,1)]"
         >
           <ul className="flex items-start justify-center flex-col text-2xl font-(family-name:--font-primary) md:font-(family-name:--font-secondary) md:text-lg md:flex-row md:items-center md:h-full">
             <li className="mt-5 ms-3 pb-3 md:p-0 md:mx-3 md:mt-0">
