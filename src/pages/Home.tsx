@@ -1,4 +1,6 @@
 function Home() {
+  const handleClick = () => {};
+
   return (
     <div>
       <div className="flex bg-[url('/images/woman%203.jpg')] bg-cover w-full h-screen">
@@ -14,9 +16,14 @@ function Home() {
             professionals. Browse our curated selection of lenses by brand,
             power, and coating — ready to ship when you are.
           </p>
-          <button className="border-[var(--lime)] border-solid">
-            Get started
-          </button>
+          <div className="bg-[var(--space-cadet)] inline-block rounded-sm mt-5">
+            <button
+              className="relative -top-1 left-1 font-(family-name:--font-primary) text-2xl border-2 border-[var(--lime)] border-solid rounded-sm text-white px-2 py-1 shadow-xl/30"
+              onClick={handleClick}
+            >
+              Get started
+            </button>
+          </div>
         </div>
       </div>
     </div>
