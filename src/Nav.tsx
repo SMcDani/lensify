@@ -51,7 +51,7 @@ function Nav() {
         >
           <ul className="flex items-start justify-center flex-col text-2xl font-(family-name:--font-primary) md:font-(family-name:--font-secondary) md:text-lg md:flex-row md:items-center md:h-full">
             <li className="mt-5 ms-3 pb-3 md:p-0 md:mx-3 md:mt-0">
-              <NavLink to="/home">
+              <NavLink to="/">
                 <span className="text-[#44457e] md:text-black">H</span>ome
               </NavLink>
             </li>
@@ -61,10 +61,14 @@ function Nav() {
               </NavLink>
             </li>
             <li className="mx-3 pb-3 md:p-0">
-              <span className="text-[#44457e] md:text-black">I</span>nvoices
+              <NavLink to="/invoices">
+                <span className="text-[#44457e] md:text-black">I</span>nvoices
+              </NavLink>
             </li>
             <li className="mx-3 pb-3 md:p-0">
-              <span className="text-[#44457e] md:text-black">A</span>ccount
+              <NavLink to="/account">
+                <span className="text-[#44457e] md:text-black">A</span>ccount
+              </NavLink>
             </li>
           </ul>
         </div>
