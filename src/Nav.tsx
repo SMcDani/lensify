@@ -23,7 +23,7 @@ const toggleHidden = () => {
 
 function Nav() {
   return (
-    <div className="fixed w-full">
+    <div className="fixed w-full z-100">
       <div className="fixed w-[46px] h-[43px] md:h-[65px] sm:shadow-md sm:ml-3 bg-[#ffffff]">
         <NavLink to="/">
           <h1 className="text-center text-4xl md:text-5xl font-(family-name:--font-primary)">
