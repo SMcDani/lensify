@@ -1,4 +1,5 @@
 function Home() {
+  const btn = document.getElementById("get-started-btn");
   const handleClick = () => {};
 
   return (
@@ -18,7 +19,9 @@ function Home() {
           </p>
           <div className="bg-[var(--space-cadet)] inline-block rounded-sm mt-5">
             <button
-              className="relative -top-1 left-1 font-(family-name:--font-primary) text-2xl border-2 border-[var(--lime)] border-solid rounded-sm text-white px-2 py-1 shadow-xl/30"
+              id="get-started-btn"
+              type="button"
+              className="relative -top-1 left-1 active:top-0 active:left-0 font-(family-name:--font-primary) text-2xl border-2 border-[var(--lime)] border-solid rounded-sm text-white px-2 py-1 shadow-xl/30"
               onClick={handleClick}
             >
               Get started
