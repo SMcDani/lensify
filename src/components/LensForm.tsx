@@ -3,7 +3,11 @@ function LensForm() {
     <div className="px-15">
       <div className="flex flex-col">
         <label htmlFor="material">Material</label>
-        <select id="material" name="material">
+        <select
+          id="material"
+          name="material"
+          className="mb-3 bg-[#cfe6ff] rounded-lg "
+        >
           <option value="plastic">Plastic</option>
           <option value="polycarbonate">Polycarbonate</option>
           <option value="1.67">1.67</option>
@@ -12,19 +16,27 @@ function LensForm() {
           <option value="hivex">Hivex</option>
         </select>
         <label htmlFor="type">Type</label>
-        <select id="type" name="type">
+        <select id="type" name="type" className="mb-3 bg-[#cfe6ff] rounded-lg">
           <option value="both">Both Spherical/Aspherical</option>
           <option value="spherical">Spherical</option>
           <option value="aspherical">Aspherical</option>
         </select>
         <label htmlFor="coating">Coating</label>
-        <select id="coating" name="coating">
+        <select
+          id="coating"
+          name="coating"
+          className="mb-3 bg-[#cfe6ff] rounded-lg"
+        >
           <option value="clear">Clear</option>
           <option value="antireflective">Antireflective</option>
           <option value="blue-block">Blue Blocker</option>
         </select>
         <label htmlFor="miscellaneous">Miscellaneous</label>
-        <select id="miscellaneous" name="miscellaneous">
+        <select
+          id="miscellaneous"
+          name="miscellaneous"
+          className="mb-3 bg-[#cfe6ff] rounded-lg"
+        >
           <option value="none">None</option>
           <option value="tr-grey">Transitions Grey</option>
           <option value="tr-brown">Transitions Brown</option>
