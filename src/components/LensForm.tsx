@@ -17,7 +17,7 @@ function LensForm() {
     const fullQuery = new URLSearchParams(query).toString();
 
     //make a call to the api using query
-    fetch(`http://localhost:3000/products?${fullQuery}`)
+    fetch(`http://localhost:3000/lenses?${fullQuery}`)
       .then((res) => res.json()) //get the response object as usable JSON
       .then((data) => setList(data));
   }, [query]);
@@ -80,6 +80,7 @@ function LensForm() {
           <option value="tr-xtractive">Transition XtrActive Grey</option>
         </select>
       </div>
+      <p>Current query: {JSON.stringify(query)}</p>
     </div>
   );
 }

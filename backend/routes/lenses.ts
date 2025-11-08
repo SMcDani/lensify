@@ -12,6 +12,7 @@
         img: "",
     },
 */
+import { Request, Response } from 'express';
 const express = require('express');
 const router = express.Router();
 
@@ -498,7 +499,7 @@ const lenses = [
     },
 ];
 
-router.get("/", (req, res) => {
+router.get("/", (req: Request, res: Response) => {
     const { material, type, coating, misc } = req.query;
     console.log(`request received: ${req.query}`);
 })
